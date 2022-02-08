@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user_1 = User.create(email: "watermilandrea@gmail.com", )
+email_1 = Email.create(subject: "csv.name", message: "test", user: user_1)
+csv_1 = Csv.create(name: "file_1", user: user_1)
