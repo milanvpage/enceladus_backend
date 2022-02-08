@@ -1,8 +1,11 @@
 class EmailsController < ApplicationController
-    def new
-    end
-
+    
     def index
+        emails = Email.all
+        render json: emails
+    end
+    
+    def new
     end
 
     def show
